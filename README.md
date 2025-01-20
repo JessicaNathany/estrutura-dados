@@ -10,4 +10,26 @@ Repositório para estudos de estrutura de dados usando a linguagem Python
 
 
 ## O que são Algoritmos?
-##### Os padrões criacionais fornecem vários mecanismos de criação de objetos, que aumentam a flexibilidade e reutilização de código já existente.
+São sequências de passo a passo com instruções para máquina realizar, a máquina executará as sequência de instriuções para resolver um determinado problema.
+
+Os algoritmos são projetados para serem efificnetes, precisos e executáveis pela máquina. A ideia central é dividir um problema em etapas menores emais manejáveis, que passam ser interpretadas por um computador. 
+
+- entrada: dados iniciais necessários para o processamento;
+- processamento: etapas de cálculo realizados com base na entrada;
+- saída: o resultado final gerado pelo algoritmo
+
+## O que são Estrutura de Dados?
+É uma coleção de tipo de valores e seus relacionamentos, uma maneira organizada de armazenar, gerenciar e acessar dados de forma eficiente em um programa ou um sistema operacional. 
+
+## Lista Linear
+Uma estrutura de dados na qual cada elemento (exceto o primeiro) tem um predecessor e cada elemento (exceto o último) tem um sucessor.
+Os elementos estão em um dado ordem, por exemplo, ordem de inclusão ou ordenados por uma chave. 
+
+- primeiro elemento: Não possui um predecessor (vem antes dele).
+- último elemento: não possui um sucessor (vem depois dele)
+- elemento intermediário: cada um tem exatamente um predecessor um sucessor.
+
+
+## Lista Sequencial
+É uma lista linear pela qual a ordem lógica dos elmentos (a ordem vista pelo usuário) é a mesma ordem física (em um elemento em memória). Isto é, elementos vizinhos na lista estarão em posições vizinhas da memória.
+
