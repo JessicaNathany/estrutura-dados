@@ -1,38 +1,48 @@
-# Tempo de execução de uma lista encadeada
-import time
-
-inteiros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
-def insere_elemento_na_lista(lista, numero):
-    novo_no = Node(numero)
-    novo_no.next = lista
-    return novo_no
 
-def remove_elemento_na_lista(lista):
-    lista = lista.next
-    return lista    
+class ListaEncadeada:
+    def  __init__(self):
+        self.head = None # inicializa a lista encadeada sem nenhum nó
 
-# teste insere elemento na lista 
-numero_posicao = 80
+    def insere_elemento_no_inicio(self, data):
+            
+            # insere um elemento em uma lista encadeada
+            novo_no = Node(data)
+            novo_no.next = self.head 
+            self.head = novo_no
 
-# medir o tempo de execução
-start_time = time.perf_counter()
-lista_encadeada = insere_elemento_na_lista(inteiros, numero_posicao)
-end_time = time.perf_counter()
-
-print(lista_encadeada)
-print(f"Tempo de execução ao inserir item da lista: {end_time - start_time} segundos")
-
-
-#remove elemento na lista 
-start_time = time.perf_counter()
-lista_encadeada = remove_elemento_na_lista(lista_encadeada)
-end_time = time.perf_counter()
-
-print(lista_encadeada)
-print(f"Tempo de execução ao remover item da lista: {end_time - start_time} segundos")
+    def remove_elemento_por_posicao(self, posicao):
+            
+            if self.head == None:
+                print("Lista vazia")
+                return
+            
+            if posicao == 0:
+                self.head = self.head.next
+                return
+            
+            atual = self.head
+            anterior = None
+            contator = 0       
+            
+            while atual is not None and contador < posicao:
+                anterior = atual
+                atual = atual.next
+                contador += 1
+                
+            if atual is None:
+                print("Posição inválida")
+                return
+            
+    def imprime_result(self):
+        atual = self.head
+        
+        while atual is not None:
+            print(f"posicao atual", atual.data)
+            atual = atual.next
+        print("None")
+            

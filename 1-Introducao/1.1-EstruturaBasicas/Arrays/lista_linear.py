@@ -21,7 +21,7 @@ lista_sequencial = insere_numero_no_meio(inteiros, numero_para_inserir)
 end_time = time.perf_counter()
 
 print(lista_sequencial)
-print(f"Tempo de execução ao inserir item da lista: {end_time - start_time} segundos")
+print(f"Tempo de execução ao inserir item da lista linear: {end_time - start_time} segundos")
 
 #remove elemento na lista 
 start_time = time.perf_counter()
@@ -29,4 +29,4 @@ lista_sequencial = remove_numero_no_meio(lista_sequencial)
 end_time = time.perf_counter()
 
 print(lista_sequencial)
-print(f"Tempo de execução ao remover item da lista: {end_time - start_time} segundos")
+print(f"Tempo de execução ao remover item da lista linear: {end_time - start_time} segundos")
