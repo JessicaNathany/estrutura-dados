@@ -27,7 +27,7 @@ class ListaEncadeada:
             
             atual = self.head
             anterior = None
-            contator = 0       
+            contador = 0       
             
             while atual is not None and contador < posicao:
                 anterior = atual
