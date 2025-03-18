@@ -38,6 +38,8 @@ class ListaEncadeada:
                 print("Posição inválida")
                 return
             
+            anterior.next = atual.next
+            
     def imprime_result(self):
         atual = self.head
         
